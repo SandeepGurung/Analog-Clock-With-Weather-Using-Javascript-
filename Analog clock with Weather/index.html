@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock with Weather</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="clock-wrapper"> 
+            <div class="clock">
+                <div class="outer_face">
+                    <div class="marker oneseven"></div>
+                    <div class="marker twoeight"></div>
+                    <div class="marker fourten"></div>
+                    <div class="marker fiveeleven"></div>
+
+                    <div class="inner_face">
+                        <div class="hand hour " data-hour-hand></div>
+                        <div class="hand minute" data-minute-hand></div>
+                        <div class="hand second" data-second-hand></div>
+                       <p id="clock-day"></p>
+                    </div>
+
+                </div>   <!--outer_face-->
+            </div> <!--clock-->
+        </div>  <!--clock-wrapper --->
+
+        
+
+        <div class="weather-container">
+            <div class="weather-wrapper">
+                <div class="weather_heading">
+                    <span class="month" id="month"></span>
+                    <span class="dayNum" id="dayNum"></span>
+                    <span class="dayName" id="dayName"></span>
+                    <span class="cityName" id="cityName"></span>
+                    
+                </div>
+            
+            
+            <div class="weather-info">
+                      <div class="weather-icon">
+                 <!--  <img src="icons/Asset 18@5x.png" alt="wait" width="100px" height="100px"> -->
+                      </div>
+
+                      <div class="temperature">
+                         <div class="temperature-info">
+                             <span class="temp" id="temp"></span>
+                             <span class="degree" id="degree">&#8451;</span>
+                         </div>
+                           
+                      </div>
+                          <div class="weather-description">
+                              <h1 class="" id="weatherDesc"></h1>
+                          </div>
+
+            </div>  <!--weather-info-->
+            </div>   <!--weather-wrapper-->
+        </div>  <!--weather container-->    
+
+    </div>  <!--container-->   
+
+    <script src='js/script.js'>
+    </script>
+    
+</body>
+
+</html>
